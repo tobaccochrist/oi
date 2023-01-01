@@ -11,10 +11,9 @@
         <viewmodel:MatrizenRechnerViewModel/>
     </Window.DataContext>
     <Grid Margin="25">
-        <!--Das ist actually nur das fenster in welches der view reingelegt wird-->
+        <!--MainWindow + DataContext in welchem das View abgelegt wird-->
         
-        <view:MatrizenRechnerView 
-            DataContext="{Binding MatrizenRechnerViewModel}"/>
+        <view:MatrizenRechnerView/>
     </Grid>
     
 </Window>
