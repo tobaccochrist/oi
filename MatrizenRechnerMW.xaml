@@ -1,0 +1,20 @@
+﻿<Window x:Class="MatrizenRechner.MatrizenRechnerMW"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:view="clr-namespace:MatrizenRechner.View" xmlns:viewmodel="clr-namespace:MatrizenRechner.ViewModel"
+        mc:Ignorable="d"
+        Title="MatrizenRechnerMW" Height="450" Width="800"
+        Background="{StaticResource BackgroundPrimary}">
+    <Window.DataContext>
+        <viewmodel:MatrizenRechnerViewModel/>
+    </Window.DataContext>
+    <Grid Margin="25">
+        <!--Das ist actually nur das fenster in welches der view reingelegt wird-->
+        
+        <view:MatrizenRechnerView 
+            DataContext="{Binding MatrizenRechnerViewModel}"/>
+    </Grid>
+    
+</Window>
