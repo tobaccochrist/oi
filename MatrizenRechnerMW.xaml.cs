@@ -23,7 +23,6 @@ namespace MatrizenRechner
         public MatrizenRechnerMW()
         {
             InitializeComponent();
-            this.DataContext = new MatrizenRechnerViewModel();
         }
     }
 }
